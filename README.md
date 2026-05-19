@@ -6,9 +6,9 @@ This project focuses on the computational comparison between two neural stimulat
 
 * **CUFF electrodes**
 * **TIME electrodes** (Transverse Intrafascicular Multichannel Electrodes)
-* **AIR electrodes**
+* **AIR electrodes** (Adaptable Intrafascicular Radial Electrode)
 
-The simulations are implemented in COMSOL Multiphysics in order to evaluate and compare the electrical stimulation behavior produced by the 3 electrode types when applied to peripheral nerve fascicles.
+The simulations are implemented in COMSOL Multiphysics 6.4 in order to evaluate and compare the electrical stimulation behavior produced by the 3 electrode types when applied to peripheral nerve fascicles.
 
 The main goal of the project is to investigate how the geometry and positioning of the electrodes influence:
 
@@ -36,7 +36,7 @@ The generated geometrical data are then transferred to COMSOL through the MATLAB
 
 The computational domain consists of a peripheral nerve immersed in a saline solution used to reproduce the interstitial biological environment.
 
-* Saline conductivity: σ=2S/m
+* Saline conductivity: σ = 2 S/m
 
 The nerve structure contains five fascicles with different dimensions distributed inside the nerve.
 
@@ -45,9 +45,9 @@ Each fascicle contains a neuron modeled through the Hodgkin–Huxley (HH) model 
 The biological tissues included in the model are:
 
 Tissue	Conductivity
-* Epineurium	σ=0.083S/m
-* Endoneurium	σ={0.083, 0.083, 0.571}S/m
-* Perineurium	Modeled as contact impedance, σ=0.0009S/m
+* Epineurium	σ = 0.083 S/m
+* Endoneurium	σ = {0.083, 0.083, 0.571} S/m
+* Perineurium	modeled as contact impedance, σ = 0.0009 S/m
 
 The perineurium is modeled as a contact impedance layer to reproduce the insulating behavior surrounding each fascicle.
 ---
@@ -58,11 +58,11 @@ The CUFF electrode is modeled as an extraneural stimulation device wrapped aroun
 
 The electrodes are made of platinum with conductivity:
 
-* Platinum conductivity: σ=9.4×10^6 S/m
+* Platinum conductivity: σ = 9.4×10^6 S/m
 
 The electrodes are mechanically fixed through a silicone cuff acting as insulating support material:
 
-* Silicone conductivity: σ=1×10^−12 S/m
+* Silicone conductivity: σ = 1×10^−12 S/m
 
 Different stimulation strategies are analyzed for the CUFF configuration, including:
 
@@ -71,7 +71,7 @@ Different stimulation strategies are analyzed for the CUFF configuration, includ
 - Tripolar stimulation
 - Multipolar stimulation
 
-The simulations are used to investigate electric potentiql penetration, current density distribution, fascicle selectivity, and stimulation efficiency.
+The simulations are used to investigate electric potential penetration, current density distribution, fascicle selectivity, and stimulation efficiency.
 
 ---
 
@@ -87,20 +87,20 @@ The simulations are used to investigate electric potentiql penetration, current 
 
 # Physics and Simulation Environment
 
-The simulations are implemented using COMSOL Multiphysics.
+The simulations are implemented using COMSOL Multiphysics 6.4.
 
 The project mainly relies on:
 
 * Electric Currents physics
 * Conductive media modeling
 * Finite Element Method (FEM)
-* Time-dependent and stationary studies
+* Stationary and time-dependent studies
 
 The simulation workflow includes:
 
 1. Geometry generation
 2. Material assignment
-3. Boundary condition definition
+3. Boundary and domain condition definition
 4. Mesh generation
 5. Electrical stimulation setup
 6. Solver execution
@@ -115,7 +115,6 @@ The project aims to:
 
 * Compare Cuff, TIME and AIR electrode performance
 * Evaluate neural selectivity
-* Analyze electric field propagation
 * Study fascicle recruitment
 * Investigate axonal activation thresholds
 * Optimize stimulation strategies
