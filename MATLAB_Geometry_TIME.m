@@ -4,7 +4,7 @@ clc;
 import com.comsol.model.*
 import com.comsol.model.util.*
 
-model = ModelUtil.create('Vagus_Nerve_TIME_Traversing');
+model = ModelUtil.create('TIME_Electrode');
 
 comp1 = model.component.create('comp1', true);
 geom1 = comp1.geom.create('geom1', 3);
