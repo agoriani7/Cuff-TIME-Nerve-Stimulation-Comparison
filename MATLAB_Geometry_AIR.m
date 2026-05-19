@@ -4,7 +4,7 @@ clc;
 import com.comsol.model.*
 import com.comsol.model.util.*
 
-model = ModelUtil.create('Vagus_Nerve_AIR_Electrode');
+model = ModelUtil.create('AIR_Electrode');
 
 comp1 = model.component.create('comp1', true);
 geom1 = comp1.geom.create('geom1', 3);
@@ -83,10 +83,8 @@ for s = 1:2
     spike.set('r', spike_D/2);
     spike.set('h', spike_L);
     
-    % Direzione radiale verso l'interno
     spike.set('axis', [-nx, -ny, 0]);
     
-    % Offset laterale (tangenziale), stessa Z
     offset_sign = (s - 1.5) * 2;  % -1 o +1
     spike.set('pos', [
         sx + offset_sign * (pitch/2) * tx, ...
