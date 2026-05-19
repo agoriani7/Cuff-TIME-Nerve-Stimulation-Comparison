@@ -6,8 +6,9 @@ This project focuses on the computational comparison between two neural stimulat
 
 * **CUFF electrodes**
 * **TIME electrodes** (Transverse Intrafascicular Multichannel Electrodes)
+* **AIR electrodes**
 
-The simulations are implemented in COMSOL Multiphysics in order to evaluate and compare the electrical stimulation behavior produced by the two electrode types when applied to peripheral nerve fascicles.
+The simulations are implemented in COMSOL Multiphysics in order to evaluate and compare the electrical stimulation behavior produced by the 3 electrode types when applied to peripheral nerve fascicles.
 
 The main goal of the project is to investigate how the geometry and positioning of the electrodes influence:
 
@@ -112,7 +113,7 @@ The simulation workflow includes:
 
 The project aims to:
 
-* Compare CUFF and TIME electrode performance
+* Compare Cuff, TIME and AIR electrode performance
 * Evaluate neural selectivity
 * Analyze electric field propagation
 * Study fascicle recruitment
