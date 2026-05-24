@@ -50,8 +50,8 @@ Tissue	Conductivity
 * Perineurium	modeled as contact impedance, σ = 0.0009 S/m
 
 The perineurium is modeled as a contact impedance layer to reproduce the insulating behavior surrounding each fascicle.
----
 
+---
 # CUFF Electrode Model
 
 The CUFF electrode is modeled as an extraneural stimulation device wrapped around the nerve.
