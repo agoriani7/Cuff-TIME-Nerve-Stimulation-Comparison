@@ -64,27 +64,36 @@ The electrodes are mechanically fixed through a silicone cuff acting as insulati
 
 * Silicone conductivity: σ = 1×10^−12 S/m
 
-Different stimulation strategies are analyzed for the CUFF configuration, including:
-
-- Monopolar stimulation
-- Bipolar stimulation
-- Tripolar stimulation
-- Multipolar stimulation
-
-The simulations are used to investigate electric potential penetration, current density distribution, fascicle selectivity, and stimulation efficiency.
-
 ---
-
 # TIME Electrode Model
 
+The TIME electrode is modeled as a transverse intrafascicular stimulation device inserted inside the nerve tissue.
 
+The electrode substrate is made of polyimide acting as insulating support material:
+
+* Polyimide conductivity: σ = 1×10^−14 S/m
+
+The active stimulation sites are made of platinum with conductivity:
+
+* Platinum conductivity: σ = 9.43×10^6 S/m
+
+The TIME electrode is positioned transversally within the nerve and partially penetrates the epineurium and endoneurium without crossing the entire nerve structure.
+
+The electrode geometry consists of:
+
+Polyimide shank:
+- Thickness: 20 µm
+- Height: 280 µm
+Platinum active sites:
+- Number of contacts: 10
+- Contact diameter: 60 µm
+- Contact thickness: 300 nm
 
 ---
 # AIR Electrode Model 
 
 
 ---
-
 # Physics and Simulation Environment
 
 The simulations are implemented using COMSOL Multiphysics 6.4.
