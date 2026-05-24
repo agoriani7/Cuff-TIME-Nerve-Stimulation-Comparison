@@ -54,15 +54,26 @@ The perineurium is modeled as a contact impedance layer to reproduce the insulat
 ---
 # CUFF Electrode Model
 
-The CUFF electrode is modeled as an extraneural stimulation device wrapped around the nerve.
+The CUFF electrode is modeled as an extraneural stimulation device wrapped around the outer surface of the nerve.
 
-The electrodes are made of platinum with conductivity:
+The electrode contacts are made of platinum with conductivity:
 
-* Platinum conductivity: σ = 9.4×10^6 S/m
+* Platinum conductivity: σ = 9.43×10^6 S/m
 
-The electrodes are mechanically fixed through a silicone cuff acting as insulating support material:
+The insulating support structure is made of silicone with conductivity:
 
 * Silicone conductivity: σ = 1×10^−12 S/m
+
+The CUFF electrode is positioned concentrically around the epineurium without penetrating the neural tissue.
+
+The active stimulation sites consist of:
+
+Platinum active sites:
+- Number of contacts: 8
+- Width: 0.05 mm
+- Length: 0.5 mm
+
+The platinum contacts are positioned circumferentially on the inner surface of the cuff facing the epineurium.
 
 ---
 # TIME Electrode Model
